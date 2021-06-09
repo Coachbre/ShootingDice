@@ -31,7 +31,7 @@ namespace ShootingDice
             SmackTalkingPlayer RudeRuby = new SmackTalkingPlayer()
             {
                     Name= "Ruby",
-                    Taunt= "You have the weakest wrists I've ever seen"
+                    Taunt= "Go head! You have the weakest wrists I've ever seen"
                     //DiceSize defaults to Player int already set
             };
 
@@ -40,12 +40,17 @@ namespace ShootingDice
                     Name= "William"
                 };
 
+                HumanPlayer You = new HumanPlayer()
+                {
+                    Name = "The Only Real Player"
+                };
+
             player1.Play(large);
 
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, RudeRuby, WinningWilliam
+                player1, player2, player3, large, RudeRuby, WinningWilliam, You
             };
 
             PlayMany(players);
