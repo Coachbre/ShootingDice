@@ -12,10 +12,10 @@ namespace ShootingDice
     {
         public string Taunt { get; set; }
 
-        public override void Play(Player other)
+        public override int Roll()
         {
-            base.Play(other);
             Console.WriteLine($"{Taunt}");
+            return base.Roll();
             // base refers to the parent method- in this case Play(Player other))
         }
 

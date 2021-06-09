@@ -31,7 +31,7 @@ namespace ShootingDice
             SmackTalkingPlayer RudeRuby = new SmackTalkingPlayer(){
                     Name= "RudeRuby",
                     Taunt= "You have the weakest wrists I've ever seen"
-                    //DiseSize defults to Player int already listed
+                    //DiceSize defaults to Player int already set
             };
 
             player1.Play(large);
